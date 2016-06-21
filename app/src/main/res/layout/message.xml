@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ScrollView
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+
+
+    <LinearLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:textSize="20dp"
+        android:layout_marginTop="70dp"
+        android:hint="Enter phone number"
+        android:id="@+id/eight"/>
+        </android.support.design.widget.TextInputLayout>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/one"
+        android:layout_gravity="center_horizontal"
+        android:text="SHOW DATE PICKER DIALOG"/>
+
+
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/two"
+        android:layout_gravity="center_horizontal"
+        android:text="SHOW TIME PICKER DIALOG"
+        android:layout_below="@+id/one"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="Enter budget"
+        android:id="@+id/three"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/two"
+        android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="Enter capacity"
+        android:id="@+id/four"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/three"
+        android:inputType="number"
+        android:layout_toStartOf="@+id/button"
+        android:layout_toLeftOf="@+id/button"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/seven"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="Submit"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="2.20"
+        android:layout_alignTop="@+id/four"
+            android:textSize="20dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="400dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/five"
+            android:paddingTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/four"
+        android:inputType="textMultiLine"
+        android:layout_alignEnd="@+id/seven"
+        android:layout_alignRight="@+id/seven"
+        android:ems="10"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/six"
+        android:text="Send sms"
+        android:paddingTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/five"
+        android:layout_centerHorizontal="true"
+            android:textSize="20dp" />
+
+</LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

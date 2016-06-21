@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="ORGANISATION NAME"
+                android:textSize="20dp"
+                android:background="#ffba21"
+                android:gravity="center_horizontal" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:inputType="textPersonName"
+                android:id="@+id/organisationname"
+                android:textSize="20dp"
+                android:gravity="center_horizontal" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton"
+                android:src="@drawable/call"
+                android:onClick="calling" />
+
+            <ImageButton
+                android:layout_width="79dp"
+                android:layout_height="66dp"
+                android:id="@+id/imageButton2"
+                android:src="@drawable/message"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:onClick="messaging" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ratingBar"
+                android:numStars="4"
+                android:layout_alignBottom="@+id/imageButton2"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+
+            <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/logo"
+        />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="NAME"
+                android:textSize="20dp"
+                android:background="#ffba21"
+                android:gravity="center_horizontal" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:inputType="textPersonName"
+                android:id="@+id/name"
+                android:textSize="20dp"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:background="#ffba21"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="PHONE NUMBER"
+                android:textSize="20dp"
+                android:gravity="center_horizontal" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:inputType="phone"
+
+                android:textSize="20dp"
+                android:id="@+id/phone"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:background="#ffba21"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Email Id"
+                android:textSize="20dp"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:inputType="textEmailAddress"
+                android:textSize="20dp"
+                android:ems="10"
+                android:id="@+id/email"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:background="#ffba21"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Address"
+                android:textSize="20dp"
+                android:gravity="center_horizontal" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                android:textSize="20dp"
+                android:lines="5"
+                android:id="@+id/address"
+                android:gravity="center_horizontal"
+                android:maxLines="7" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Number Of events done"
+                android:id="@+id/textView"
+                android:layout_gravity="center_horizontal"
+                android:background="#ffba21"
+                android:textSize="20dp"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/events"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

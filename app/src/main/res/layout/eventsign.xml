@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="#ffdddd"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="PHONE NUMBER"
+        android:textSize="40dp"
+        android:layout_weight="0.86" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:text="PHN"
+        android:id="@+id/phn" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="     PASSWORD"
+        android:textSize="50dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:inputType="textPassword"
+        android:height="100dp"
+        android:text="Password"
+        android:textSize="25dp"
+
+        android:id="@+id/pwd"
+        android:layout_weight="0.79" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" LOGIN"
+        android:height="75dp"
+        android:textSize="20dp"
+        android:background="#ffba21"
+        android:id="@+id/button1"
+        android:onClick="logging" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Register as Event Planner"
+        android:height="75dp"
+        android:textSize="20dp"
+        android:background="#12abff"
+        android:id="@+id/button2"
+        android:layout_gravity="center_horizontal"
+        android:onClick="Registereventplanner"/>
+
+</LinearLayout>
+
